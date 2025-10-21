@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SOCC v1.0 — Developer Master Document (Dark)</title>
+<style>
+  :root {
+    --bg:#0b0c0f;
+    --ink:#e0e0e0;
+    --muted:#9ca3af;
+    --border:#1f242d;
+    --link:#9ac7ff;
+    --accent:#d0d0d0;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial;}
+  .wrap{max-width:980px;margin:0 auto;padding:40px 20px 80px;}
+  header{text-align:center;margin-bottom:24px;}
+  header img{width:120px;height:auto;display:block;margin:12px auto;}
+  h1{font-size:2rem;margin:0 0 10px 0;color:var(--accent);}
+  .meta{color:var(--muted);font-size:.95rem;margin-bottom:28px;}
+  a{color:var(--link);}
+  h2{margin-top:36px;padding-top:12px;border-top:2px solid var(--border);font-size:1.4rem;color:var(--accent);}
+  pre,code{background:#111318;border:1px solid var(--border);border-radius:8px;color:#c9d1d9;}
+  pre{padding:14px;overflow:auto;}
+  table{border-collapse:collapse;width:100%;margin:12px 0 24px 0;}
+  th,td{border:1px solid var(--border);padding:10px;vertical-align:top;}
+  th{background:#1a1c22;text-align:left;color:var(--accent);}
+  tr:nth-child(even){background:#14161b;}
+  blockquote{border-left:4px solid var(--border);padding-left:12px;margin-left:0;color:var(--muted);}
+  .footer{text-align:center;color:var(--muted);padding-top:24px;border-top:1px solid var(--border);margin-top:40px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="data:image/png;base64," alt="SOCC Logo"/>
+  <h1>🧠 SOCC v1.0 — Developer Master Document</h1>
+  <div class="meta">Source Repository: 
+    <a href="https://github.com/socc2205/SOCC">https://github.com/socc2205/SOCC</a> · Final Draft
+  </div>
+</header>
+
+<h2>🌱 Vision & Philosophy</h2>
+<p><strong>SOCC — The Organic Digital Bank for All</strong></p>
+<p>SOCC’s mission is to democratize capital and empower the working class through AI precision and ethical finance.
+We aim to serve 80% of the global population earning under $800 per month, providing transparent, low‑risk access to digital finance.</p>
+<blockquote>Fairness for Future — Organic Growth for Humanity</blockquote>
+
+<h2>🎯 Goals</h2>
+<ul>
+<li>Build SOCC Core Engine (AI + Blockchain Integration).</li>
+<li>Deploy Organic AI with Risk Governor logic.</li>
+<li>Provide transparent deposit / withdrawal and tiered KYC system.</li>
+<li>Integrate Voice + Chat AI Customer Center.</li>
+<li>Ensure VARA / GDPR compliance and auditability.</li>
+</ul>
+
+<h2>🧩 Architecture Overview</h2>
+<pre><code>Frontend / API Gateway
+     │
+SOCC Core Engine
+ ├── Organic AI Logic
+ ├── Risk Governor
+ ├── Wallet Service
+ ├── Blockchain Adapter
+ ├── Voice & Chat AI Center
+ └── Data Sync & Audit
+     │
+PostgreSQL / Redis / Encrypted Storage
+Ethereum / BSC / Polygon</code></pre>
+
+<h2>🤖 Organic AI Engine (96.6% Modeled Target)</h2>
+<p>“Organic AI” = ethical intelligence balancing profit and protection.
+The 96.6% success rate is a <strong>simulation benchmark</strong>; live performance varies.
+The <strong>Risk Governor</strong> always overrides the profit optimizer to protect capital.</p>
+
+<h2>💰 Wallet / Deposit / Withdrawal Framework</h2>
+<table>
+<tr><th>Feature</th><th>Description</th></tr>
+<tr><td>Multi‑Chain Wallet Hub</td><td>ETH / BSC / Polygon hot–cold management</td></tr>
+<tr><td>Deposits</td><td>Address generation + N‑confirmation credit</td></tr>
+<tr><td>Withdrawals</td><td>2FA + policy limits + multi‑sig control</td></tr>
+<tr><td>Custodial for Minors</td><td>Guardian‑approved transactions only</td></tr>
+<tr><td>AML Screening</td><td>Travel Rule & sanctions API hooks</td></tr>
+</table>
+
+<h2>🗣️ Voice & Chat AI Customer Center</h2>
+<p>Dual‑channel support with multilingual chat and phone AI.
+Shared NLU core; seamless chat↔voice handoff; human escalation if confidence &lt; 0.85; full consent and logging.</p>
+
+<h2>📈 Tier Framework & Scenario Modeling</h2>
+<table>
+<tr><th>Tier</th><th>Risk Mode</th><th>Exposure / Leverage</th><th>Win‑Rate Band</th><th>Volatility σ</th><th>Notes</th></tr>
+<tr><td>T1 Low‑Risk</td><td>Conservative</td><td>≤ 3 % / ≤ 3×</td><td>90–96 %</td><td>0.3–0.5 %</td><td>Stable growth</td></tr>
+<tr><td>T1 High‑Risk (Sim)</td><td>Experimental</td><td>≤ 8 % / ≤ 8×</td><td>80–88 %</td><td>2–4 %</td><td>Large swings</td></tr>
+<tr><td>T2 Low‑Risk</td><td>Steady</td><td>≤ 5 % / ≤ 5×</td><td>90–95 %</td><td>0.5–1 %</td><td>Moderate growth</td></tr>
+<tr><td>T2 High‑Risk (Sim)</td><td>Accelerated</td><td>≤ 12 % / ≤ 10×</td><td>75–85 %</td><td>3–6 %</td><td>Wide dispersion (test mode)</td></tr>
+</table>
+
+<h2>🛡️ Compliance & Security</h2>
+<ul>
+<li>VARA minor rules: guardian custody / simulation‑only.</li>
+<li>GDPR alignment + data redaction pipeline.</li>
+<li>Audit logs immutable (append‑only).</li>
+<li>Consent tracking per session.</li>
+<li>Quarterly third‑party audits.</li>
+</ul>
+
+<h2>🗓️ Roadmap & KPIs</h2>
+<table>
+<tr><th>Phase</th><th>Deliverable</th><th>Target</th></tr>
+<tr><td>1</td><td>Core Engine + Risk Governor</td><td>Nov 2025</td></tr>
+<tr><td>2</td><td>Wallet Hub + Transparency</td><td>Dec 2025</td></tr>
+<tr><td>3</td><td>Voice & Chat Center</td><td>Jan 2026</td></tr>
+<tr><td>4</td><td>Organic AI Optimization</td><td>Feb 2026</td></tr>
+<tr><td>5</td><td>Compliance & VARA Audit</td><td>Q2 2026</td></tr>
+</table>
+
+<h2>📎 Appendix</h2>
+<pre><code>if conf &lt; 0.85 or intent in ESCALATE_ALWAYS:
+    escalate()
+elif is_minor(user):
+    escalate()
+elif user.tier == "T1":
+    safe_mode_on()
+execute(intent)
+</code></pre>
+
+<div class="footer">© 2025 SOCC — All Rights Reserved</div>
+</div>
+</body>
+</html>
